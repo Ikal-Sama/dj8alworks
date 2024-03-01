@@ -56,7 +56,7 @@ const Footer = () => {
                 There are many variations passages of Lorem Ipsum available, but
                 the majority have suffered alteration
               </p>
-              <div className="flex gap-5 items-center mt-3">
+              <div className="flex lg:flex-row flex-col gap-5 items-center mt-3">
                 <input
                   type="text"
                   placeholder="Email"

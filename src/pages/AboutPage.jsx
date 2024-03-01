@@ -3,9 +3,14 @@ import AboutBanner from "../components/AboutBanner";
 import Bg1 from "../assets/images/bg1.png";
 import Img1 from "../assets/images/img1.jpg";
 import Img2 from "../assets/images/services/img6.jpg";
+import Avatar1 from "../assets/images/team/avatar.png";
+import Avatar2 from "../assets/images/team/profile.jpg";
+
 import { SlUser } from "react-icons/sl";
 import { SlBadge } from "react-icons/sl";
 import { BiSupport } from "react-icons/bi";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
 
 import { IoIosCheckboxOutline } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
@@ -13,7 +18,7 @@ import WhatweDoCard from "../components/WhatweDoCard";
 
 const AboutPage = () => {
   return (
-    <div className="mb-[20rem] lg:mb-0">
+    <div className="mb-[20rem] lg:mb-0" id="about">
       <AboutBanner />
 
       {/* About our team */}
@@ -154,7 +159,8 @@ const AboutPage = () => {
         </div>
         <WhatweDoCard />
 
-        <div className="py-10 mt-20">
+        {/* Team members */}
+        <div className="py-10 mt-20 mb-28">
           <div className="text-center">
             <div className="flex  gap-4 justify-center">
               <div className="bg-amber-500 w-3 h-3 rounded-full mt-2.5"></div>
@@ -163,6 +169,69 @@ const AboutPage = () => {
               </p>
             </div>
             <h1 className="text-4xl font-bold">Amazing Team Members</h1>
+          </div>
+          <div className=" mt-20 mb-20 flex lg:flex-row flex-col gap-10 justify-center">
+            <div className="relative">
+              <div className=" w-[15rem] lg:w-[27rem]">
+                <img
+                  src={Avatar1}
+                  alt=""
+                  className="w-[35rem] bg-transparent"
+                />
+
+                <div className="bg-gray-100 absolute top-[13rem] lg:top-[25rem] left-2 lg:left-4 w-[14rem] lg:w-[25rem] ">
+                  <div className="text-center mt-6 border-b border-slate-300 pb-2">
+                    <h1 className="text-xl font-bold">Almario Miano</h1>
+                    <p className="text-lg text-zinc-500">Founder</p>
+                  </div>
+                  <div className="flex flex-col lg:flex-row gap-3 items-center justify-center px-5 text-md mt-4 p-3 ">
+                    <div className="flex  gap-3 items-center text-zinc-500 hover:text-amber-500 duration-300 cursor-pointer">
+                      <FaPhoneVolume className="text-amber-500" />
+                      <span className=" text-sm lg:text-[15px]">
+                        +63 9184898185
+                      </span>
+                    </div>
+                    <div className="flex  gap-3 items-center text-zinc-500 hover:text-amber-500 duration-300 cursor-pointer">
+                      <MdOutlineEmail className="text-amber-500" />
+                      <span className="text-sm lg:text-[15px]">
+                        miano@gmail.com
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="w-[15rem] lg:w-[27rem] lg:mt-0 mt-[11rem]">
+                <img
+                  src={Avatar2}
+                  alt=""
+                  className="w-[35rem] bg-transparent"
+                />
+
+                <div className="bg-gray-100 absolute top-[24rem] lg:top-[25rem] left-2 lg:left-4 w-[14rem] lg:w-[25rem] ">
+                  <div className="text-center mt-6 border-b border-slate-300 pb-2">
+                    <h1 className="text-xl font-bold">Daniel Jhon Bancale</h1>
+                    <p className="text-lg text-zinc-500">Co Founder</p>
+                  </div>
+                  <div className="flex flex-col lg:flex-row gap-3 items-center justify-center  px-5 text-md mt-4 p-3 ">
+                    <div className="flex gap-3 items-center text-zinc-500 hover:text-amber-500 duration-300 cursor-pointer">
+                      <FaPhoneVolume className="text-amber-500" />
+                      <span className="text-sm lg:text-[15px]">
+                        +63 91357237298
+                      </span>
+                    </div>
+                    <div className="flex gap-3 items-center  text-zinc-500 hover:text-amber-500 duration-300 cursor-pointer">
+                      <MdOutlineEmail className="text-amber-500" />
+                      <span className="text-sm lg:text-[15px]">
+                        bancale146@gmail.com
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -17,7 +17,7 @@ import Banner from "../components/Banner";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div id="home">
       <Banner />
       <div className="flex justify-center py-28 lg:py-20">
         <Cards />
