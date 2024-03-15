@@ -15,7 +15,7 @@ const cardData = [
     id: 2,
     image:
       "https://img.freepik.com/free-photo/asian-businessmen-businesswomen-meeting-brainstorming-ideas-about-creative-web-design-planning-application-developing-template-layout-mobile-phone-project-working-together-small-office_7861-2567.jpg?t=st=1709186623~exp=1709190223~hmac=3b855e2d7a9663bf435e3322ae9db69af01059175d7925e4bc302e3ad558d3bd&w=996",
-    title: "Website maintenance",
+    title: "Website Maintenance",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda a odit, eligendi accusamus ea tempora!",
     icon: <FaTools />,
   },

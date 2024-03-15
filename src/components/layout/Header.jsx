@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/logo3.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaPhoneVolume } from "react-icons/fa6";
 // images
 import Hero from "../../assets/images/hero.png";
@@ -8,6 +8,13 @@ import Hero2 from "../../assets/images/hero2.png";
 import Hero3 from "../../assets/images/hero3.png";
 
 const Header = () => {
+  const location = useLocation();
+  const [activePath, setActivePath] = useState(location.pathname);
+
+  useEffect(() => {
+    setActivePath(location.pathname);
+  }, [location]);
+
   // useEffect(() => {
   //   const intervalId = setInterval(() => {
   //     const animatedElement = document.querySelector(".animate__fadeInRight");
@@ -52,34 +59,56 @@ const Header = () => {
               <ul className="flex gap-10 uppercase font-bold">
                 <Link
                   to="/"
-                  onClick={() =>
-                    window.scrollTo(
-                      0,
-                      document.getElementById("home").offsetTop
-                    )
-                  }
+                  className={` ${
+                    activePath === "/"
+                      ? "text-amber-500 underline underline-offset-8 "
+                      : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
+                  }`}
                 >
-                  <li className="text-amber-500">Home</li>
+                  <li>Home</li>
                 </Link>
                 <Link
                   to="/about"
-                  onClick={() =>
-                    window.scrollTo(
-                      0,
-                      document.getElementById("about").offsetTop
-                    )
-                  }
+                  className={` ${
+                    activePath === "/about"
+                      ? "text-amber-500 underline underline-offset-8 "
+                      : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
+                  }`}
                 >
-                  <li className="text-zinc-200">About</li>
+                  <li>About</li>
                 </Link>
                 <Link>
-                  <li className="text-zinc-200">Serivices</li>
+                  <li
+                    className={` ${
+                      activePath === "/services"
+                        ? "text-amber-500 underline underline-offset-8 "
+                        : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
+                    }`}
+                  >
+                    Serivices
+                  </li>
                 </Link>
                 <Link>
-                  <li className="text-zinc-200">Blog</li>
+                  <li
+                    className={` ${
+                      activePath === "/blog"
+                        ? "text-amber-500 underline underline-offset-8 "
+                        : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
+                    }`}
+                  >
+                    Blog
+                  </li>
                 </Link>
                 <Link>
-                  <li className="text-zinc-200">Contact</li>
+                  <li
+                    className={` ${
+                      activePath === "/contact"
+                        ? "text-amber-500 underline underline-offset-8 "
+                        : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
+                    }`}
+                  >
+                    Contact
+                  </li>
                 </Link>
               </ul>
             </div>
