@@ -21,12 +21,12 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-10 max-w-screen-2xl w-screen ">
       <div
-        className=" bg-cover bg-no-repeat relative h-[78rem] md:h-[54.5rem] lg:h-[35rem]"
+        className=" bg-cover bg-no-repeat relative h-[93.5rem] md:h-[55rem] lg:h-[39rem] xl:h-[35rem]"
         style={{ backgroundImage: `url(${Bg1})` }}
       >
-        <div className="bg-zinc-900/90 absolute h-[78rem] md:h-[54.5rem] lg:h-[35rem] top-0 right-0 left-0 ">
+        <div className="bg-zinc-900/90 absolute h-[93.5rem] md:h-[54.5rem] lg:h-[35rem] top-0 right-0 left-0 ">
           <div className="bg-black/40 flex justify-between lg:flex-row flex-col items-center mx-10 px-10">
             <div className="flex items-center  gap-5 py-5">
               <img src={Logo} alt="" className="w-14" />

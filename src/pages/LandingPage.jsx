@@ -123,7 +123,7 @@ const LandingPage = () => {
       {/* WHY OUR COMMPNAY ? */}
       <div
         style={{ backgroundImage: `url(${Img3})` }}
-        className="bg-cover bg-no-repeat mt-20"
+        className="bg-cover bg-no-repeat mt-20 max-w-screen-2xl w-screen"
       >
         <div className="text-white bg-zinc-800/45 py-20 w-full flex flex-col lg:flex-row gap-10 px-10">
           <div className="w-full lg:w-1/2">
