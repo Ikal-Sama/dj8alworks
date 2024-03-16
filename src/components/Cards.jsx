@@ -11,7 +11,7 @@ const Cards = () => {
               <img src={item.image} alt="" className="object-cover" />
             </div>
             <div className="absolute text-center px-5 py-10 bottom-0 bg-black/45 hover:bg-amber-500/95  duration-300">
-              <h1 className="text-2xl font-bold mb-4 text-zinc-100">
+              <h1 className="text-2xl font-fira font-bold mb-4 text-zinc-100">
                 {item.title}
               </h1>
               <p className="text-sm font-medium text-zinc-300">{item.desc}</p>

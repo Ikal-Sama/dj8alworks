@@ -30,10 +30,10 @@ const LandingPage = () => {
               About Us
             </p>
             <div>
-              <h1 className="text-3xl lg:text-4xl font-semibold my-3">
+              <h1 className="text-3xl lg:text-4xl font-semibold my-3 font-fira">
                 Provide the Best Easy Solution for Your IT Problem
               </h1>
-              <p>
+              <p className="font-fira">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 libero illum labore earum sit eligendi architecto consequuntur
                 nulla nemo ducimus porro mollitia id quo vero repellat beatae
@@ -112,7 +112,7 @@ const LandingPage = () => {
           <p className="text-lg uppercase font-semibold border-b-[2px] border-amber-500 mb-3">
             Service
           </p>
-          <h1 className=" text-3xl lg:text-4xl font-semibold w-[20rem] lg:w-[32rem]">
+          <h1 className=" font-fira text-3xl lg:text-4xl font-semibold w-[20rem] lg:w-[32rem]">
             Services We’re Providing to Our Customers
           </h1>
         </div>
@@ -130,7 +130,7 @@ const LandingPage = () => {
             <p className="uppercase text-sm border-b border-amber-500 w-28 mb-3">
               Why choose us
             </p>
-            <h1 className="text-4xl font-extrabold">
+            <h1 className="text-4xl font-extrabold font-fira">
               Why Our Technology Solutions Company Stands Out?
             </h1>
             <div className="mt-14 flex items-center justify-between  gap-2">

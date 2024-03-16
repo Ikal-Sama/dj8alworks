@@ -12,7 +12,7 @@ const Banner = () => {
           <p className="uppercase my-3 text-amber-500 bg-black w-[19rem] md:w-[30rem ] lg:w-[22rem] py-2 animate__animated animate__fadeInLeft">
             Efficient Solutions, Exceptional Results
           </p>
-          <h1 className="text-2xl w-[20rem] md:text-3xl lg:text-4xl font-bold lg:w-[34rem] leading-[3rem] text-white animate__repeat-5  animate__animated animate__fadeInRight ">
+          <h1 className="text-2xl font-fira w-[20rem] md:text-3xl lg:text-5xl font-bold lg:w-[50rem] leading-[3rem] text-white animate__repeat-5  animate__animated animate__fadeInRight ">
             <span className="text-amber-500">DJ8AL WORKS</span>/ IT SOLUTIONS &
             WEB SERVICES
           </h1>

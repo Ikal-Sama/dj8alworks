@@ -77,16 +77,15 @@ const Header = () => {
                 >
                   <li>About</li>
                 </Link>
-                <Link>
-                  <li
-                    className={` ${
-                      activePath === "/services"
-                        ? "text-amber-500 underline underline-offset-8 "
-                        : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
-                    }`}
-                  >
-                    Serivices
-                  </li>
+                <Link
+                  to="/services"
+                  className={` ${
+                    activePath === "/services"
+                      ? "text-amber-500 underline underline-offset-8 "
+                      : "text-zinc-200 hover:text-amber-500 hover:underline underline-offset-8 duration-300"
+                  }`}
+                >
+                  <li>Services</li>
                 </Link>
                 <Link>
                   <li
