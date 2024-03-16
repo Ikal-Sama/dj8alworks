@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutBanner = () => {
   return (
-    <div className="max-w-screen-2xl w-screen">
+    <div className="container w-screen">
       <div
         style={{ backgroundImage: `url(${Hero2})` }}
         className="h-screen object-cover bg-cover"

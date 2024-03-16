@@ -3,8 +3,8 @@ import cardData from "../assets/data/CardData";
 
 const Cards = () => {
   return (
-    <div className="">
-      <div className="flex flex-col lg:flex-row gap-5">
+    <div className="container">
+      <div className="flex flex-wrap justify-center gap-10 ">
         {cardData.map((item) => (
           <div key={item.id} className="relative">
             <div>

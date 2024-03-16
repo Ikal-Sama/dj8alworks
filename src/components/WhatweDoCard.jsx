@@ -5,7 +5,7 @@ import { FiPlus } from "react-icons/fi";
 
 const WhatweDoCard = () => {
   return (
-    <div>
+    <div className="container">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {cardData.map((item) => (
           <div key={item.id} className="border relative ">

@@ -3,16 +3,16 @@ import Hero2 from "../assets/images/hero2.png";
 
 const Banner = () => {
   return (
-    <div className="max-w-screen-2xl w-screen">
+    <div className="container">
       <div
         style={{ backgroundImage: `url(${Hero2})` }}
-        className="h-screen object-cover bg-cover"
+        className="h-screen object-cover bg-cover w-screen"
       >
-        <div className=" text-center   flex flex-col justify-center items-center bg-black/40 h-screen  ">
-          <p className="uppercase my-3 text-amber-500 bg-black w-[10rem] lg:w-[22rem] py-2 animate__animated animate__fadeInLeft">
+        <div className=" text-center mt-20   flex flex-col justify-center items-center bg-black/40 h-screen  ">
+          <p className="uppercase my-3 text-amber-500 bg-black w-[19rem] md:w-[30rem ] lg:w-[22rem] py-2 animate__animated animate__fadeInLeft">
             Efficient Solutions, Exceptional Results
           </p>
-          <h1 className="text-2xl w-[12rem] md:text-3xl lg:text-4xl font-bold lg:w-[34rem] leading-[3rem] text-white animate__repeat-5  animate__animated animate__fadeInRight ">
+          <h1 className="text-2xl w-[20rem] md:text-3xl lg:text-4xl font-bold lg:w-[34rem] leading-[3rem] text-white animate__repeat-5  animate__animated animate__fadeInRight ">
             <span className="text-amber-500">DJ8AL WORKS</span>/ IT SOLUTIONS &
             WEB SERVICES
           </h1>

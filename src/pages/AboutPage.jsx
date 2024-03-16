@@ -18,7 +18,7 @@ import WhatweDoCard from "../components/WhatweDoCard";
 
 const AboutPage = () => {
   return (
-    <div className="mb-[20rem] lg:mb-0" id="about">
+    <div className="mb-[20rem] lg:mb-0 container" id="about">
       <AboutBanner />
 
       {/* About our team */}
