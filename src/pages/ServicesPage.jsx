@@ -79,7 +79,7 @@ const ServicesPage = () => {
         </div>
         <div className="flex flex-col lg:flex-row gap-10 justify-between items-center  px-10 py-20">
           <div>
-            <button className="font-fira py-2 px-10 lg:py-4 lg:px-14 border-2 border-amber-500 rounded-full text-xs lg:text-lg font-medium hover:border-[3px] transition-all ease-in-out duration-300">
+            <button className="font-sans text-zinc-700  py-2 px-10 lg:py-4 lg:px-14 border-2 border-amber-500 rounded-full text-xs lg:text-lg font-medium hover:border-[3px] transition-all ease-in-out duration-300">
               Tell us about your project
             </button>
           </div>
@@ -99,6 +99,45 @@ const ServicesPage = () => {
           </div>
         </div>
         <LineDesign />
+        <div className="py-20">
+          <h1 className="font-fira text-4xl text-center">
+            Ready To Take The Next Step ?
+          </h1>
+          <div className="flex justify-center mt-20">
+            <div
+              className={`w-[35rem] border-2  p-16 rounded-lg ${
+                isHovering
+                  ? "border-amber-500 shadow-lg transition ease-in-out duration-200"
+                  : "border-zinc-300"
+              }`}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <h1 className="text-2xl text-zinc-800 font-fira font-medium">
+                Start Now
+              </h1>
+              <p className="my-10 text-zinc-400 text-md leading-7">
+                Dissuade ecstatic and properly saw entirely sir why laughter
+                endeavor. In on my jointure horrible margaret suitable he
+                followed speedily. Indeed vanity excuse or mr lovers of on.
+              </p>
+              <div className="flex items-center gap-3 cursor-pointer">
+                <span className="font-fira font-semibold text-zinc-700">
+                  Get in Touch
+                </span>
+                <div
+                  className={` p-3 rounded-full text-white font-bold ${
+                    isHovering
+                      ? "bg-amber-500 transition-transform ease-out duration-300 "
+                      : "bg-zinc-300"
+                  }`}
+                >
+                  <IoMdArrowRoundForward />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
